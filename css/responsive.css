@@ -1,0 +1,38 @@
+@media screen and (min-width: 650px) {
+    .movies {
+      grid-template-columns: 1fr 1fr;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+    .modal-image img {
+        width: 100%; /* Agar gambar tidak keluar dari kotak modal */
+        height: auto; /* Memastikan gambar tetap proporsional */
+      }
+    .modal-content {
+      width: 80%; /* Mengurangi lebar modal pada layar yang lebih kecil */
+    }
+  
+    .modal-body {
+      grid-template-columns: 1fr; /* Mengubah tata letak menjadi satu kolom pada layar yang lebih kecil */
+    }
+  }
+   
+  @media screen and (min-width: 850px) {
+    .movies {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   
+  @media screen and (min-width: 1200px) {
+    .movies {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+   
+  @media screen and (min-width: 1600px) {
+    .movies {
+        grid-template-columns: repeat(5, 1fr);
+    }
+  }
